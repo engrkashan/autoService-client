@@ -1,0 +1,331 @@
+:root {
+  --red-color: #fe0201;
+  --background-black: #000000;
+  --text-color: #ffffff;
+}
+
+.page-container {
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-black);
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+form {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 50px;
+}
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding-bottom: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.smaller-font {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.small-font {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.heading-black {
+  color: black;
+}
+
+h4 {
+  font-weight: 700;
+  font-style: italic;
+}
+ul {
+  list-style: none;
+  padding-bottom: 50px;
+}
+li {
+  font-weight: 300;
+}
+label {
+  font-weight: 300;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Contact page */
+
+.contact-container {
+  margin-top: 100px;
+}
+
+.container-white {
+  max-width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.link-facebook {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 900;
+  transition: ease-in-out;
+}
+
+.link-facebook :hover {
+  opacity: 0.5;
+  font-size: 30px;
+}
+
+.link-email {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Booking page (owner page) */
+
+.login,
+.login__form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.username,
+.password {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.login__title {
+  margin-bottom: 100px;
+}
+
+/* Available Time Form page */
+
+.loginButton {
+  margin-top: 30px;
+
+  width: 500px;
+  padding: 16px;
+  background-color: var(--background-black);
+  color: white;
+}
+
+.addedTimeButton {
+  margin-top: 30px;
+  width: 500px;
+  padding: 16px;
+  background-color: var(--background-black);
+  color: white;
+}
+.label-text {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.timeInput {
+  padding: 16px;
+  width: 500px;
+  text-align: center;
+}
+
+.pasirinktiButton {
+  margin-top: 30px;
+  width: 500px;
+  padding: 16px;
+  background-color: var(--background-black);
+  color: white;
+}
+.loginInput {
+  padding: 16px;
+  width: 500px;
+}
+
+.special-margin {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* */
+
+.bookContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.booking__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.bookTitle {
+  margin-bottom: 30px;
+}
+.bookingBtn {
+  margin-top: 20px;
+  background-color: var(--background-black);
+  color: #fff;
+}
+
+.timeForm {
+  padding: 150px;
+  text-align: center;
+}
+
+.formContainer {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Autoservisas page */
+
+.container {
+  background-color: var(--background-black);
+  max-width: 100%;
+  padding: 50px;
+}
+
+.greeting-container {
+  padding-bottom: 50px;
+}
+
+.autoservisas-logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.services {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.paslaugos-button {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #000000;
+  text-decoration: none;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.btn-special {
+  width: 800px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paslaugos-button:hover {
+  opacity: 0.8;
+}
+
+.paslaugos-spacing {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+
+/* Booking page */
+
+.bookingInput {
+  padding: 16px;
+  width: 500px;
+}
+.bookingInputSpecial {
+  padding: 40px;
+  width: 500px;
+}
+
+.bookingLabel {
+  padding: 16px;
+}
+
+/* Footer */
+
+.p-footer {
+  font-size: 12px;
+}
+
+footer {
+  background-color: var(--background-black);
+  max-width: 100%;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.red-text {
+  color: var(--red-color);
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .paslaugos-button {
+    max-width: 80%;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .btn-special {
+    max-width: 80%;
+  }
+  .login__title {
+    margin-bottom: 40px;
+  }
+  .bookingInput,
+  .bookingInputSpecial,
+  .loginButton,
+  .loginInput {
+    max-width: 80%;
+  }
+
+  .page-container {
+    max-width: 100%;
+  }
+  .addedTimeButton {
+    max-width: 80%;
+  }
+}
