@@ -43,6 +43,8 @@ const AvailableTimeForm = () => {
           icon: "success",
           title: "Success",
           text: "Time slot added successfully!",
+        }).then(() => {
+          window.location.reload();
         });
         fetchUnbookedSlots();
       } catch (error) {
@@ -67,6 +69,8 @@ const AvailableTimeForm = () => {
         icon: "success",
         title: "Success",
         text: "Time slot removed successfully!",
+      }).then(() => {
+        window.location.reload();
       });
     } catch (error) {
       console.error("Error removing time:", error);

@@ -12,7 +12,7 @@ class BookingApp extends React.Component {
       email: "",
       phone: "",
       message: "",
-      unbookedSlots: [], 
+      unbookedSlots: [],
     };
   }
 
@@ -51,7 +51,7 @@ class BookingApp extends React.Component {
         return;
       }
 
-      const apiUrl = process.env.REACT_APP_API_URL ; // Retrieve API URL from environment file
+      const apiUrl = process.env.REACT_APP_API_URL; // Retrieve API URL from environment file
       const response = await axios.post(`${apiUrl}/booking/book-slots`, {
         slotId: selectedTime,
         name,
@@ -63,6 +63,8 @@ class BookingApp extends React.Component {
         icon: "success",
         title: "Success!",
         text: response.data.message,
+      }).then(() => {
+        window.location.reload();
       });
       this.setState((prevState) => ({
         bookedTimes: [...prevState.bookedTimes, selectedTime],
