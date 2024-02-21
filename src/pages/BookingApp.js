@@ -90,15 +90,18 @@ class BookingApp extends React.Component {
     return (
       <div className="page-container">
         <div className="formContainer">
-          <h1>Reserve time for your visit</h1>
+          <h1>Rezervuokite laiką savo vizitui</h1>
           <form>
-            <label className="bookingLabel">Choose time</label> <br />
+            <label className="bookingLabel">
+              Pasirinkite Jums tinkamą laiką
+            </label>{" "}
+            <br />
             <select
               className="bookingInput"
               value={this.state.selectedTime}
               onChange={this.handleTimeSelection}
             >
-              <option value="">Choose time</option>
+              <option value="">Pasirinkite laiką</option>
               {unbookedSlots &&
                 unbookedSlots.map((slot) => (
                   <option key={slot.id} value={slot.id}>
@@ -112,7 +115,7 @@ class BookingApp extends React.Component {
               ))}
             </ul>
             <label className="bookingLabel" htmlFor="name">
-              Name and Surename
+              Jūsų vardas ir pavardė
             </label>
             <br />
             <input
@@ -124,7 +127,7 @@ class BookingApp extends React.Component {
             />
             <br />
             <label className="bookingLabel" htmlFor="email">
-              E-mail address
+              El. pašto adresas
             </label>
             <br />
             <input
@@ -136,7 +139,7 @@ class BookingApp extends React.Component {
             />
             <br />
             <label className="bookingLabel" htmlFor="phone">
-              Phone number
+              Telefono numeris
             </label>
             <br />
             <input
@@ -148,7 +151,7 @@ class BookingApp extends React.Component {
             />
             <br />
             <label className="bookingLabel" htmlFor="message">
-              Write a comment <br /> (example: car, problem)
+              Parašykite komentarą apie reikiamas paslaugas, automobilio modelį
             </label>
             <br />
             <input
@@ -164,7 +167,7 @@ class BookingApp extends React.Component {
               type="button"
               onClick={this.bookTime}
             >
-              Reserve time
+              Rezervuoti laiką
             </button>
           </form>
         </div>
