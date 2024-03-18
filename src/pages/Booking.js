@@ -18,7 +18,7 @@ export default function Booking() {
   // new
   function handleSubmit(event) {
     event.preventDefault();
-    if (username === "Egidijus" && password === "y") {
+    if (username === "Egidijus" && password === "password") {
       navigate("/AvailableTimeForm");
     } else {
       {
