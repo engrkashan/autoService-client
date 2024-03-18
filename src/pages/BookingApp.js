@@ -152,6 +152,7 @@ class BookingApp extends React.Component {
             <br />
             <label className="bookingLabel" htmlFor="message">
               Parašykite komentarą apie reikiamas paslaugas, automobilio modelį
+              ar kt.
             </label>
             <br />
             <input

@@ -15,39 +15,19 @@ export default function Booking() {
     setPassword(event.target.value);
   }
 
-  async function handleSubmit(event) {
+  // new
+  function handleSubmit(event) {
     event.preventDefault();
-
-    try {
-      const response = await fetch(
-        process.env.REACT_APP_API_URL + "/user/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email: username, password: password }),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Login failed");
-      }
-
-      const responseData = await response.json();
-      const token = responseData.token;
-
-      // Store the token in localStorage
-      localStorage.setItem("token", token);
-
+    if (username === "Egidijus" && password === "y") {
       navigate("/AvailableTimeForm");
-    } catch (error) {
-      console.error("Login error:", error);
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Login failed. Please try again.",
-      });
+    } else {
+      {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Login failed. Please try again.",
+        });
+      }
     }
   }
 
